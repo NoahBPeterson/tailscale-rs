@@ -648,7 +648,7 @@ dependencies = [
 
 [[package]]
 name = "checks"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "clap 4.6.1",
  "globwalk",
@@ -1195,6 +1195,27 @@ name = "data-encoding"
 version = "2.11.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a4ae5f15dda3c708c0ade84bfee31ccab44a3da4f88015ed22f63732abe300c8"
+
+[[package]]
+name = "defguard_wireguard_rs"
+version = "0.7.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "27cfd58a0c9e3338235404b81cebdd9c709b33bbfe9451d602fe0d8747601db9"
+dependencies = [
+ "base64 0.22.1",
+ "libc",
+ "log",
+ "netlink-packet-core",
+ "netlink-packet-generic",
+ "netlink-packet-route 0.25.1",
+ "netlink-packet-utils",
+ "netlink-packet-wireguard",
+ "netlink-sys",
+ "nix 0.30.1",
+ "serde",
+ "thiserror 2.0.18",
+ "x25519-dalek 2.0.1",
+]
 
 [[package]]
 name = "defmt"
@@ -1841,7 +1862,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_tailscale"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "axum",
  "bytes",
@@ -1880,7 +1901,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_array256"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "geiserx_ts_bitset",
  "heapless",
@@ -1892,7 +1913,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_bart"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "cfg-if",
  "divan",
@@ -1911,7 +1932,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_bart_packetfilter"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "geiserx_ts_array256",
  "geiserx_ts_bart",
@@ -1926,7 +1947,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_bitset"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "cfg-if",
  "divan",
@@ -1936,14 +1957,14 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_capabilityversion"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "serde",
 ]
 
 [[package]]
 name = "geiserx_ts_control"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "base64 0.22.1",
  "bytes",
@@ -1986,7 +2007,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_control_noise"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "base64 0.22.1",
  "bytes",
@@ -2011,7 +2032,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_control_serde"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "base64 0.22.1",
  "chrono",
@@ -2029,7 +2050,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_dataplane"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "etherparse",
  "geiserx_ts_bart",
@@ -2046,7 +2067,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_derp"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "bytes",
  "crypto_box",
@@ -2074,7 +2095,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_disco_protocol"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "aead 0.5.2",
  "crypto_box",
@@ -2088,11 +2109,11 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_dns_wire"
-version = "0.42.0"
+version = "0.42.1"
 
 [[package]]
 name = "geiserx_ts_dynbitset"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "geiserx_ts_bitset",
  "proptest",
@@ -2101,7 +2122,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_elixir"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "geiserx_tailscale",
  "geiserx_ts_control",
@@ -2112,7 +2133,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_ffi"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "cbindgen",
  "geiserx_tailscale",
@@ -2124,7 +2145,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_forwarder"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "bytes",
  "geiserx_ts_netstack_smoltcp",
@@ -2136,14 +2157,14 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_hexdump"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "heapless",
 ]
 
 [[package]]
 name = "geiserx_ts_host_net"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "ipnet",
  "thiserror 2.0.18",
@@ -2152,7 +2173,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_http_util"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "bytes",
  "futures",
@@ -2173,7 +2194,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_keys"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "crypto_box",
  "ed25519-dalek 2.2.0",
@@ -2189,7 +2210,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_magicsock"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "geiserx_ts_disco_protocol",
  "geiserx_ts_keys",
@@ -2207,11 +2228,14 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_metrics"
-version = "0.42.0"
+version = "0.42.1"
+dependencies = [
+ "portable-atomic",
+]
 
 [[package]]
 name = "geiserx_ts_netcheck"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "geiserx_ts_control",
  "geiserx_ts_control_serde",
@@ -2229,7 +2253,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_netmon"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "tokio",
  "tracing",
@@ -2237,7 +2261,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_netstack_smoltcp"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "axum",
  "bytes",
@@ -2258,7 +2282,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_netstack_smoltcp_core"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "bytes",
  "flume",
@@ -2272,7 +2296,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_netstack_smoltcp_socket"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "bytes",
  "futures-io",
@@ -2283,7 +2307,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_nodecapability"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "cfg-if",
  "serde",
@@ -2292,7 +2316,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_overlay_router"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "geiserx_ts_bart",
  "geiserx_ts_packet",
@@ -2303,7 +2327,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_packet"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "bytes",
  "crypto_box",
@@ -2312,7 +2336,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_packetfilter"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "hashbrown 0.17.1",
  "ipnet",
@@ -2322,7 +2346,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_packetfilter_serde"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "geiserx_ts_nodecapability",
  "geiserx_ts_peercapability",
@@ -2335,7 +2359,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_packetfilter_state"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "divan",
  "geiserx_ts_bart_packetfilter",
@@ -2348,7 +2372,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_peercapability"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "serde",
  "url",
@@ -2356,7 +2380,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_python"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "geiserx_tailscale",
  "geiserx_ts_control",
@@ -2369,10 +2393,11 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_runtime"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "base64 0.22.1",
  "chrono",
+ "defguard_wireguard_rs",
  "ed25519-dalek 2.2.0",
  "etherparse",
  "futures",
@@ -2414,14 +2439,14 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_time"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "proptest",
 ]
 
 [[package]]
 name = "geiserx_ts_tka"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "argon2 0.5.3",
  "blake2 0.10.6",
@@ -2433,7 +2458,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_tls_util"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "rcgen",
  "ring",
@@ -2448,14 +2473,14 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_transport"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "geiserx_ts_packet",
 ]
 
 [[package]]
 name = "geiserx_ts_transport_tun"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "bytes",
  "geiserx_ts_hexdump",
@@ -2471,7 +2496,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_tunnel"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "aead 0.5.2",
  "base64 0.22.1",
@@ -2499,7 +2524,7 @@ dependencies = [
 
 [[package]]
 name = "geiserx_ts_underlay_router"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "geiserx_ts_packet",
  "geiserx_ts_transport",
@@ -3641,6 +3666,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "netlink-packet-generic"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2f891b2e0054cac5a684a06628f59568f841c93da4e551239da6e518f539e775"
+dependencies = [
+ "netlink-packet-core",
+]
+
+[[package]]
 name = "netlink-packet-route"
 version = "0.25.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3662,6 +3696,29 @@ dependencies = [
  "libc",
  "log",
  "netlink-packet-core",
+]
+
+[[package]]
+name = "netlink-packet-utils"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3176f18d11a1ae46053e59ec89d46ba318ae1343615bd3f8c908bfc84edae35c"
+dependencies = [
+ "byteorder",
+ "pastey",
+ "thiserror 2.0.18",
+]
+
+[[package]]
+name = "netlink-packet-wireguard"
+version = "0.2.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "598962d9067d3153a00106da10e7b8276cea68f396f4a22f5b4a079270d92e29"
+dependencies = [
+ "libc",
+ "log",
+ "netlink-packet-core",
+ "netlink-packet-generic",
 ]
 
 [[package]]
@@ -4006,6 +4063,12 @@ name = "paste"
 version = "1.0.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "57c0d7b74b563b49d38dae00a0c37d4d6de9b432382b2892f0574ddcae73fd0a"
+
+[[package]]
+name = "pastey"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "35fb2e5f958ec131621fdd531e9fc186ed768cbe395337403ae56c17a74c68ec"
 
 [[package]]
 name = "pbkdf2"
@@ -6413,7 +6476,7 @@ checksum = "e421abadd41a4225275504ea4d6566923418b7f05506fbc9c0fe86ba7396114b"
 
 [[package]]
 name = "ts_cli_util"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "cfg-if",
  "clap 4.6.1",
@@ -6432,7 +6495,7 @@ dependencies = [
 
 [[package]]
 name = "ts_devtools"
-version = "0.42.0"
+version = "0.42.1"
 dependencies = [
  "bytes",
  "clap 4.6.1",
@@ -6448,7 +6511,7 @@ dependencies = [
 
 [[package]]
 name = "ts_test_util"
-version = "0.42.0"
+version = "0.42.1"
 
 [[package]]
 name = "tun-rs"
@@ -7237,6 +7300,7 @@ checksum = "c7e468321c81fb07fa7f4c636c3972b9100f0346e5b6a9f2bd0603a52f7ed277"
 dependencies = [
  "curve25519-dalek 4.1.3",
  "rand_core 0.6.4",
+ "serde",
  "zeroize",
 ]
 
